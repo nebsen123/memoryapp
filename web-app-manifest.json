@@ -1,0 +1,16 @@
+{
+"name": "memory app",
+"icons": [
+{
+"src": "icon.png",
+"sizes": "144x144",
+"type": "image/png"
+}
+],
+"theme_color": "rgb(45,170,45)",
+"background_color": "rgb(45,170,45)",
+"scope":"/memoryapp/",
+"start_url": "/memoryapp/index.html",
+"display": "standalone",
+"orientation": "portrait"
+}
