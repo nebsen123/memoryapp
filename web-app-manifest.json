@@ -9,8 +9,8 @@
 ],
 "theme_color": "rgb(45,170,45)",
 "background_color": "rgb(45,170,45)",
-"scope":"/memoryapp/",
-"start_url": "/memoryapp/index.html",
+"scope":"nebsen123.github.io/memoryapp/",
+"start_url": "nebsen123.github.io/memoryapp/index.html",
 "display": "standalone",
 "orientation": "portrait"
 }
