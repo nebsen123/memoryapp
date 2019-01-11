@@ -56,7 +56,7 @@ function newGame () {
 function flipBack(){
   console.log(tilesFlipped)
   var allTiles = board.getElementsByClassName('tile');
-allTiles[parseInt(tilesFlipped[0])].classList.remove('flipped');
+  allTiles[parseInt(tilesFlipped[0])].classList.remove('flipped');
   allTiles[parseInt(tilesFlipped[1])].classList.remove('flipped');
   tilesFlipped = [];
   tilesMatch = [];
@@ -68,12 +68,12 @@ function twoTiles(){
     document.getElementById('board').style.pointerEvents='none';
     if(tilesMatch[0] == tilesMatch[1]) {
   var allTiles = board.getElementsByClassName('tile');
-allTiles[parseInt(tilesFlipped[0])].classList.add('reward');
+  allTiles[parseInt(tilesFlipped[0])].classList.add('reward');
   allTiles[parseInt(tilesFlipped[1])].classList.add('reward');
   tilesFlipped = [];
   tilesMatch = [];
-      setTimeout(endOfGame,500);
-    document.getElementById('board').style.pointerEvents = 'auto';
+  setTimeout(endOfGame,500);
+  document.getElementById('board').style.pointerEvents = 'auto';
 }else {
   setTimeout(flipBack, 1200);
 }
@@ -83,12 +83,12 @@ allTiles[parseInt(tilesFlipped[0])].classList.add('reward');
     if(klikket.target !== klikket.currentTarget){
       if(!klikket.target.parentNode.classList.contains('flipped')) {
       klikket.target.parentNode.classList.add('flipped');
-    tilesFlipped.push(klikket.target.parentNode.getAttribute('data-tile'));
+      tilesFlipped.push(klikket.target.parentNode.getAttribute('data-tile'));
       tilesMatch.push(klikket.target.nextElementSibling.innerHTML);
       console.log(tilesFlipped);
       console.log(tilesMatch);
       twoTiles();
-           }
+      }
     }
   }
     
